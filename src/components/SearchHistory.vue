@@ -18,6 +18,7 @@
 
 <script>
     export default {
+        name: "SearchHistory",
         props: ["list"],
         methods: {
             show(key) {
