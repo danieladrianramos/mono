@@ -18,12 +18,14 @@ In the root folder you could see the PDF with the goal.
 
 ## Folder structure
 
-- **src/main.js:** entry point of the app.
-- **src/App.vue:** is the only view that this app has.
-- **src/components/:** it contains the components used for solving the test: a form, a log and a list for displaying the results.
-- **src/services/:** it contains the services for getting the country data and for managing the log into the local storage. 
-- **src/services/:** it contains the services for getting the country data and for managing the log into the local storage.
-- **test/unit/:** it contains the test for our app.
+- **src/**
+    - **main.js:** entry point of the app.
+    - **App.vue:** is the only view that this app has.
+    - **components/:** it contains the components used for solving the test: a form, a log and a list for displaying the results.
+    - **services/:** it contains the services for getting the country data and for managing the log into the local storage. 
+    - **services/:** it contains the services for getting the country data and for managing the log into the local storage.
+- **test/** 
+    - **unit/:** it contains the test for our app.
  
 
 ## Project setup
