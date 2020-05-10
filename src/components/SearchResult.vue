@@ -51,15 +51,23 @@
 </template>
 
 <script>
+    // It displays the result of the actual search.
     export default {
+        name: "SearchResult",
         props: ['result', 'sort'],
         methods: {
+            // @vuese
+            // Emit the event "sortWasChanged" for sorting the list
             sortResult(value) {
                 this.$emit("sortWasChanged", value);
             },
+            // @vuese
+            // Bind the google url into the href property
             goTo(value) {
                 return `http://www.google.com/maps/place/${value}`;
             },
+            // @vuese
+            // Convert a object attribute into a CSV passing the name of the field to convert 
             csv(obj, field) {
                 const list = [];
 

@@ -13,8 +13,10 @@ In the root folder you could see the PDF with the goal.
 - Vue.js
 - Vue test utils
 - Jest
+- Vuese
 - Axios
 - Bootsrap 4
+
 
 ## Folder structure
 
@@ -51,4 +53,15 @@ npm run lint
 ### Running tests
 ```
 npm run test:unit
+```
+
+### Generate documentation for components
+```
+npm install -g @vuese/cli
+vuese gen
+```
+
+### Display documentation
+```
+vuese serve --open
 ```

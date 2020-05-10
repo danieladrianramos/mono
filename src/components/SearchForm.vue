@@ -24,9 +24,12 @@
 </template>
 
 <script>
+  // It displays the form used for running new searches.
   export default {
+    name: "SearchForm",
     data() {
       return {
+        // It holds the form data
         search: {
           type: "country",
           value: ""
@@ -34,6 +37,8 @@
       } 
     },
     methods: {
+      // @vuese
+      // Emit the event "searchWasExecuted" for running a new search into App.vue component
       runSearch() {
         if (this.search.value != "") {
           this.$emit("searchWasExecuted", this.search);

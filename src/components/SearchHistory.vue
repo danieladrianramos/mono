@@ -17,10 +17,14 @@
 </template>
 
 <script>
+    // It displays a log with all the searches executed.
+    // Doing click on the buttons, the user can display it again.
     export default {
         name: "SearchHistory",
         props: ["list"],
         methods: {
+            // @vuese
+            // Emit the event "searchInHistoryWasExecuted" for loading an old search into SearchResult component
             show(key) {
                 this.$emit("searchInHistoryWasExecuted", key);
             }
