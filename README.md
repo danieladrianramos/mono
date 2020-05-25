@@ -3,11 +3,6 @@
 This repo contains my solution for the test. 
 
 
-## Test
-
-In the root folder you could see the PDF with the goal.
-
-
 ## Tech used
 
 - Vue.js
